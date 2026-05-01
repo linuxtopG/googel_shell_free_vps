@@ -2,22 +2,22 @@
 ### https://shell.cloud.google.com/
 ## stp1 log in https://shell.cloud.google.com/
 ## stp2 run shell
-##stp3 update the paks
+## stp3 update the paks
 ```
 sudo apt update
 ```
 ```
 sudo apt upgrade
 ```
-##stp4 Install Required Packages
+## stp4 Install Required Packages
 ```
 sudo apt update && sudo apt install -y xfce4 xfce4-goodies tightvncserver novnc websockify dbus-x11
 ```
-#This command installs the XFCE desktop environment, the VNC server, noVNC, and necessary system libraries.
+# This command installs the XFCE desktop environment, the VNC server, noVNC, and necessary system libraries.
 
 =======================================================================
-##stp5  Set the VNC Password
-#Create a password to secure your remote desktop session
+## stp5  Set the VNC Password
+# Create a password to secure your remote desktop session
 ```
 vncpasswd
 ```
@@ -32,7 +32,7 @@ exec dbus-launch startxfce4 &" > ~/.vnc/xstartup
 
 chmod +x ~/.vnc/xstartup
 ```
-##stp6 Start the Services
+## stp6 Start the Services
 ```
 vncserver :1 -geometry 1280x720
 ```
@@ -47,7 +47,7 @@ websockify --web /usr/share/novnc/ 8080 localhost:5901
 
 ## 3- vnc.html
 
-# #4- A new browser tab will open. Click Connect and enter your VNC password
+## 4- A new browser tab will open. Click Connect and enter your VNC password
 
 ===============================================================================
 #### 🛠️ Troubleshooting

@@ -41,14 +41,20 @@ vncserver :1 -geometry 1280x720
 websockify --web /usr/share/novnc/ 8080 localhost:5901
 ```
 ### Access the Desktop
-|1- Click the Web Preview icon at the top right of the Cloud Shell window.|
-|2- Select Preview on port 8080|
-|3- vnc.html|
-|4- A new browser tab will open. Click Connect and enter your VNC password|
+#1- Click the Web Preview icon at the top right of the Cloud Shell window
+
+#2- Select Preview on port 8080
+
+#3- vnc.html
+
+#4- A new browser tab will open. Click Connect and enter your VNC password
+
 ===============================================================================
 #### 🛠️ Troubleshooting
-CommandsTo stop the server: vncserver -kill :1T
-o clear stuck lock files: 
+
+CommandsTo stop the server: vncserver -kill :1
+
+To clear stuck lock files: 
 ```
 sudo rm -rf /tmp/.X1-lock /tmp/.X11-unix/X1
 ```

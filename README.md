@@ -15,7 +15,7 @@ sudo apt update && sudo apt install -y xfce4 xfce4-goodies tightvncserver novnc 
 ```
 #This command installs the XFCE desktop environment, the VNC server, noVNC, and necessary system libraries.
 
-===================================================================================================================
+=======================================================================
 ##stp5  Set the VNC Password
 #Create a password to secure your remote desktop session
 ```
@@ -45,7 +45,7 @@ websockify --web /usr/share/novnc/ 8080 localhost:5901
 2- Select Preview on port 8080
 3- vnc.html
 4-A new browser tab will open. Click Connect and enter your VNC password
-==================================================================================================================
+===============================================================================
 #### 🛠️ Troubleshooting
 CommandsTo stop the server: vncserver -kill :1T
 o clear stuck lock files: 
